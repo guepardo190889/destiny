@@ -5,9 +5,8 @@
 }
 
 	.rb-grid li {
-		width: 24%;
+		width: 25%;
 		height: 15em;
-		margin: 0.5%;
 		color: #fff;
 		display: block;
 		float: left;
@@ -17,11 +16,11 @@
 	}
 
 		.rb-grid li.rb-span-2 {
-			width: 49%;
+			width: 50%;
 		}
 
 		.rb-grid li.rb-span-4 {
-			width: 99%;
+			width: 100%;
 		}
 
 		.rb-grid li h3 {
@@ -47,7 +46,6 @@
 .rb-temp {
 	display: block;
 	font-size: 2em;
-	opacity: 0.5;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
@@ -166,7 +164,7 @@
 
 .sol {
 	background: url("../img/sol.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .sol-thumb {
@@ -176,7 +174,7 @@
 
 .atlantis {
     background: url("../img/atlantis.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .atlantis-thumb {
     background: url("../img/atlantis.jpg");
@@ -185,7 +183,7 @@
 
 .est {
 	background: url("../img/iis.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .est-thumb {
@@ -195,7 +193,7 @@
 
 .tire {
 	background: url("../img/tire.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .tire-thumb {
@@ -205,7 +203,7 @@
 
 .sat {
 	background: url("../img/satelite.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .sat-thumb {
@@ -215,7 +213,7 @@
 
 .led {
 	background: url("../img/led.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .led-thumb {
@@ -225,7 +223,7 @@
 
 .energia {
 	background: url("../img/energia.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .energia-thumb {
@@ -240,15 +238,31 @@
 
 .water {
 	background: url("../img/water.jpg") no-repeat;
-    background-size: 100% 100%;
+   	background-size: cover;
 }
 
 .stars {
 	background:url("../img/stars.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 
 .stars-thumb {
 	background:url("../img/stars.jpg") no-repeat;
     background-size:cover;
+}
+.tag{
+	text-align: center;
+	text-shadow: #000 1px 1px 3px;
+	color: black;
+	margin: 50px auto;
+	line-height: 30px;
+	width: 80%;
+	font-size: 52px;
+	font-size: 6rem;
+}
+.logo{
+	margin-left: 30px;
+	margin-top: 10px;
+	position: absolute;
+	left:0px;
 }
