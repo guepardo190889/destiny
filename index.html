@@ -3,26 +3,30 @@
 <head>
 	<meta charset="UTF-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>scrolldeck.js</title>
+  	<!--<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />-->
+	<title>Exploring everything</title>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
 	<style>
-	#bg{
-		background: url(img/bg.jpg) no-repeat rgb(10,10,23);
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
-	}
-	#explore{
-		background: url(img/squairy_light.png);
-	}
+		#bg{
+			background: url(img/bg.jpg) no-repeat rgb(10,10,23);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		}
+		#explore{
+			background: url(img/squairy_light.png);
+		}
 	</style>
+
 	<script type='text/javascript'src='https://cdn.firebase.com/v0/firebase-auth-client.js'></script>
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery.scrolldeck.js"></script>
+	
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-39915313-1']);
@@ -34,6 +38,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 	</script>
+	
 </head>
 <body onload="getTweet()">
 	
@@ -45,9 +50,19 @@
 		<div id="instructions"></div>
 		<div id="center"><p>Why we explore?</p></div>
 		<div id="center_btn">
-			<a href="#why" class="nav-button btn_sign"><strong>Why we explore?</strong></a>
-			<a href="#explore" class="nav-button btn_sign"><strong>Let's explore</strong></a>
+			<a href="#why" class="nav-button btn_sign"><strong>Discover</strong></a>
+			<a href="#explore" class="nav-button btn_sign"><strong>Tell Us</strong></a>
 		</div>
+	</div>
+
+	<div class="slide" id="why">
+		<div id="question"><p>Discover With Us</p></div>
+		<!--<div id="center_btn">
+			<input class="input_question" type="text" placeholder="Tell us why do you think we explore">
+		</div>
+		<div class="wrapper" id="feed">
+		</div>-->
+		Hola
 	</div>
 
 	<div class="slide" id="explore">
@@ -57,16 +72,7 @@
 		</div>
 		<div class="wrapper" id="feed">
 		</div>
-	</div>
-
-	<div class="slide" id="why">
-		<div id="question"><p>Why do you think we explore?</p></div>
-		<div id="center_btn">
-			<input class="input_question" type="text" placeholder="Tell us why do you think we explore">
-		</div>
-		<div class="wrapper" id="feed">
-		</div>
-	</div>
+	</div>	
 
 	<script>
 	$(document).ready(function() {
