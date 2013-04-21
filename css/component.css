@@ -190,6 +190,10 @@
 	background-size:cover;
 }
 
+.rb-grid li:nth-child(10) {
+	background: url("http://i1262.photobucket.com/albums/ii618/jakipaper/iss_helmet_reflection_zps266b937a.jpg");
+	background-size:cover;
+}
 
 @media screen and (max-width: 63.125em) {
 
@@ -215,7 +219,7 @@
 }
 
 .image-sal {
-	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	background: url("http://img.gawkerassets.com/img/17y6iqcav2cscjpg/original.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
