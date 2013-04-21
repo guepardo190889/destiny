@@ -16,7 +16,10 @@
 			background-size: cover;
 		}
 		#explore{
-			background: url(img/squairy_light.png);
+			background: url(img/why.jpg);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
 		}
 	</style>
 
@@ -55,17 +58,14 @@
 		</div>
 	</div>
 
-	<div class="slide" id="why">
+	<!--<div class="slide" id="why">
 		<div id="question"><p>Discover With Us</p></div>
-	</div>
+	</div>-->
 
 	<div class="slide" id="explore">
-		<div id="question"><p>Why do you think we explore?</p></div>
+		<div id="question2"><p>Why do you think we explore?</p></div>
 		<div id="center_btn">
 			<input id="input_tweet" type="text" main="input_tweet" class="input_question" placeholder="Tell us why do you think we explore">
-
-			<a id="tweet_button" href="https://twitter.com/share" class="twitter-share-button" data-text="Exploring Everything" data-size="large" data-hashtags="whyweexplore">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</div>
 		<div class="wrapper" id="feed">
 		</div>
@@ -88,14 +88,20 @@
 	}
 	function feedtweet(data){
 		var arreglo =[0];
-		for (var i=0;i<6;i++){
+		var cont=0;
+		for (var i=0;i<20;i++){
 			randomnumber=Math.floor(Math.random()*15);
 			arreglo.push(randomnumber);
-			if(arreglo.indexOf(randomnumber) != -1){
-			$("#feed").append("<div class=left1>"
-				+"<h4 class=azul>@"+data['results'][randomnumber].from_user+"</h4>"
-				+"<div><img class=profile src="+data['results'][randomnumber].profile_image_url+"></div>"
-				+"<span class=text><p>"+data['results'][randomnumber].text+"<p></span></div>");
+			hola = $.unique(arreglo);
+			if(hola){
+				$("#feed").append("<div class=left1>"
+					+"<h4 class=azul>@"+data['results'][randomnumber].from_user+"</h4>"
+					+"<div><img class=profile src="+data['results'][randomnumber].profile_image_url+"></div>"
+					+"<span class=text><p>"+data['results'][randomnumber].text+"<p></span></div>");
+				cont = cont +1;
+			}
+			if(cont==6){
+				i=20;
 			}
 		}
 	}

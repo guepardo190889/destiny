@@ -18,6 +18,15 @@ body {
 	line-height: 2px;
 	color: black;
 }
+#question2 {
+	text-align: center;
+	width: 80%;
+	text-shadow: gray 1px 1px 3px;
+	color: white;
+	margin: -185px auto;
+	font-size: 4rem;
+	line-height: 2px;
+}
 #center {
 	text-align: center;
 	text-shadow: #000 1px 1px 3px;
