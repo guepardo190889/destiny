@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,700,900);
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+.logo{
+	margin-left: 30px;
+	margin-top: 10px;
+	position: absolute;
+	left:0px;
+}
+#question {
+	text-align: center;
+	width: 80%;
+	text-shadow: gray 1px 1px 3px;
+	color: #F7F5ED;
+	margin: -165px auto;
+	font-size: 4rem;
+	line-height: 2px;
+	color: black;
+}
+#center {
+	text-align: center;
+	text-shadow: #000 1px 1px 3px;
+	color: #F7F5ED;
+	margin: -80px auto;
+	line-height: 2px;
+	width: 80%;
+	font-size: 52px;
+	font-size: 6rem;
+}
+.tag{
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+	color: #F7F5ED;
+}
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 50px;
+	background-color:transparent;
+}
+
+.slide {
+	margin: 0 auto;
+	width: 100%;
+	padding: 40px 0;
+	padding: 12rem 0;
+	height: 370px;
+	overflow-x: hidden;
+}
+#center_btn{
+	text-align: center;
+	width: 80%;
+	font-size: 3rem;
+	line-height: 2px;
+	margin: 90px auto;
+}
+#center_btn{
+	text-align: center;
+	width: 80%;
+	font-size: 3rem;
+	line-height: 2px;
+	margin: 90px auto;
+}
+.input_question{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 20px 10px;
+	border: 0;
+	border-radius: 3px;
+	margin-top: 120px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 75%;
+}
+.btn_sign{
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 20px 10px;
+	border: 0;
+	border-radius: 3px;
+	background-color: #3D77B8;
+	margin-top: 120px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 200px;
+	color:#F7F5ED;
+	-moz-box-shadow: 0px 4px 5px #362E30;
+	-webkit-box-shadow: 0px 4px 5px #362E30;
+	-box-shadow: 0px 4px 5px #362E30;
+}
+.btn_sign:hover{
+	background: #D3484F;
+	color: white;
+}
+.btn_sign:visited{
+	color: white;
+}
+.horz_menu{
+	right: 60px;
+}
+ul.horz_menu {
+	color: white;
+	list-style: none;
+	position: static;
+	margin-top: 15px;
+	margin-left: 40%;
+}
+
+ul.horz_menu li {
+	float: left;
+	margin-right: 3px;
+}
+@media (max-width: 1280px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1160px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 1040px) {
+	html {
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 1080px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 920px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 800px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media (max-width: 700px) {
+	html {
+		font-size: 10px;
+	}
+}
+
