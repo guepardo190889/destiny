@@ -78,3 +78,13 @@
 	text-align:justify;
 	text-shadow: #000 1px 1px 3px;
 }
+.tag3{
+	text-align: center;
+	text-shadow: #000 1px 1px 3px;
+	color: white;
+	margin: 70px auto;
+	line-height: 5px;
+	width: 80%;
+	font-size: 52px;
+	font-size: 6rem;
+}
