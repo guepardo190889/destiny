@@ -35,7 +35,7 @@
 	})();
 	</script>
 </head>
-<body>
+<body onload="getTweet()">
 	
 	<header>
 		<img class="logo" src="img/nasa.png">
@@ -45,16 +45,29 @@
 		<div id="instructions"></div>
 		<div id="center"><p>Why we explore?</p></div>
 		<div id="center_btn">
-        	<a href="#explore" class="nav-button btn_sign"><strong>Let's explore</strong></a>
-      	</div>
+			<a href="#why" class="nav-button btn_sign"><strong>Why we explore?</strong></a>
+			<a href="#explore" class="nav-button btn_sign"><strong>Let's explore</strong></a>
+		</div>
 	</div>
 
 	<div class="slide" id="explore">
 		<div id="question"><p>Why do you think we explore?</p></div>
 		<div id="center_btn">
 			<input class="input_question" type="text" placeholder="Tell us why do you think we explore">
-      	</div>
+		</div>
+		<div class="wrapper" id="feed">
+		</div>
 	</div>
+
+	<div class="slide" id="why">
+		<div id="question"><p>Why do you think we explore?</p></div>
+		<div id="center_btn">
+			<input class="input_question" type="text" placeholder="Tell us why do you think we explore">
+		</div>
+		<div class="wrapper" id="feed">
+		</div>
+	</div>
+
 	<script>
 	$(document).ready(function() {
 		var deck = new $.scrolldeck({
@@ -63,7 +76,26 @@
 		});
 		deck.controller.animate('#instructions',{ duration: 100, property:'opacity', end: 0 }); 
 	});
+	function getTweet(){
+		$.ajax({
+			url: "http://search.twitter.com/search.json?q=whyweexplore&result_type=mixed",
+			dataType: "jsonp",
+			jsonpCallback: "feedtweet()"
+		});
+	}
+	function feedtweet(data){
+		var arreglo =[0];
+		for (var i=0;i<6;i++){
+			randomnumber=Math.floor(Math.random()*15);
+			arreglo.push(randomnumber);
+			if(arreglo.indexOf(randomnumber) != -1){
+			$("#feed").append("<div class=left1>"
+				+"<h4 class=azul>@"+data['results'][randomnumber].from_user+"</h4>"
+				+"<div><img class=profile src="+data['results'][randomnumber].profile_image_url+"></div>"
+				+"<span class=text><p>"+data['results'][randomnumber].text+"<p></span></div>");
+			}
+		}
+	}
 	</script>
-	
 </body>
 </html>

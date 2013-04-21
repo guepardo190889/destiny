@@ -13,7 +13,7 @@ body {
 	width: 80%;
 	text-shadow: gray 1px 1px 3px;
 	color: #F7F5ED;
-	margin: -165px auto;
+	margin: -185px auto;
 	font-size: 4rem;
 	line-height: 2px;
 	color: black;
@@ -27,6 +27,9 @@ body {
 	width: 80%;
 	font-size: 52px;
 	font-size: 6rem;
+}
+#explore{
+	overflow: hidden;
 }
 .tag{
 	font-size: 22px;
@@ -74,7 +77,7 @@ header {
 	padding: 20px 10px;
 	border: 0;
 	border-radius: 3px;
-	margin-top: 120px;
+	margin-top: 140px;
 	margin-right: 5px;
 	margin-left: 5px;
 	width: 75%;
@@ -121,6 +124,102 @@ ul.horz_menu li {
 	float: left;
 	margin-right: 3px;
 }
+.wrapper{
+   margin: -80px auto;
+   left: 164px;
+   width: 1160px;
+}
+.left1{
+	padding: 10px;
+	position: relative;
+	float: left;
+	left: 25px;
+	width: 330px;
+   	height: 170px;
+	margin-top: 30px;
+	border: 0;
+	border-radius: 3px;
+	background-color: #FFF;
+	border-radius: 6px;
+	margin-right: 30px;
+	-webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.left2{
+	padding: 10px;
+	position: relative;
+	float: left;
+	left: 25px;
+	width: 330px;
+   	height: 150px;
+	margin-top: 30px;
+	border: 0;
+	border-radius: 3px;
+	background-color: #FFF;
+	border-radius: 6px;
+	margin-right: 30px;
+	-webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.left3{
+	padding: 10px;
+	position: relative;
+	float: left;
+	left: 25px;
+	width: 330px;
+   	height: 150px;
+	margin-top: 30px;
+	border: 0;
+	border-radius: 3px;
+	background-color: #FFF;
+	border-radius: 6px;
+	margin-right: 30px;
+	-webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.profile{
+	position: relative;
+	top:15px;
+	left:5px;
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+h4.azul
+{
+	color: #FFF;
+	text-shadow: #000 1px 2px 4px;
+	position: relative;
+	z-index: 2;
+	position: relative;
+	width: 63%;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 0px 5px 32px;
+	margin: -10px -30px;
+	line-height:25px;
+	background-color: #B82937;
+	-webkit-box-shadow: 0px 2px 4px #888;
+	-moz-box-shadow: 0px 2px 4px #888;
+	box-shadow: 0px 2px 4px #888;
+}
+h4.azul:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 100%;
+	border-width: 5px 10px;
+	border-style: solid;
+	border-color: #666 #666 transparent transparent;
+}
+h2
 @media (max-width: 1280px) {
 	html {
 		font-size: 18px;
