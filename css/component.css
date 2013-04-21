@@ -8,7 +8,6 @@
 		width: 24%;
 		height: 15em;
 		margin: 0.5%;
-		background: #8CC7DF;
 		color: #fff;
 		display: block;
 		float: left;
@@ -142,59 +141,6 @@
 		opacity: 0.1;
 	}
 
-/* Colors */
-
-/* Grid */
-.rb-grid li:nth-child(1) {
-	background: url("http://img.gawkerassets.com/img/17y6iqcav2cscjpg/original.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(2) {
-	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(3) {
-	background: url("http://sitelife.aviationweek.com/ver1.0/Content/images/store/13/2/1d5cd0bc-82ad-4fbf-924a-49ad83105360.Full.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(4) {
-	background: url("http://www.blogcdn.com/www.autoblog.com/media/2009/01/lunar_rover_nasa---1.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(5) {
-	background: url("http://avanceyperspectiva.cinvestav.mx/wp-content/uploads/2013/02/satelite.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(6) {
-	background: url("http://www.carlightblog.com/files/2011/11/LED-Fertigung21.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(7) {
-	background: url("http://www.smartgridcostarica.com/wordpress/wp-content/uploads/2012/11/BSE’s-Solar-Energy-Development-Center..jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(8) {
-	background: url("http://www.clickrally.com/wp-content/uploads/2011/09/Concept_Mars_colony.jpg");
-	background-size: cover;
-}
-
-.rb-grid li:nth-child(9) {
-	background: url("http://apod.nasa.gov/apod/image/1304/air_campxBeletsky.jpg");
-	background-size:cover;
-}
-
-.rb-grid li:nth-child(10) {
-	background: url("http://i1262.photobucket.com/albums/ii618/jakipaper/iss_helmet_reflection_zps266b937a.jpg");
-	background-size:cover;
-}
-
 @media screen and (max-width: 63.125em) {
 
 	.rb-grid li,
@@ -218,94 +164,91 @@
 		}
 }
 
-.image-sal {
-	background: url("http://img.gawkerassets.com/img/17y6iqcav2cscjpg/original.jpg") no-repeat;
+.sol {
+	background: url("../img/sol.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.image-sal-thumb {
-	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	*/
-	background-position-x: 800px;
-	background-position-y: 600px;
+.sol-thumb {
+	background: url("../img/sol.jpg");
+	background-size: cover;
 }
 
-.video {
-	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+.atlantis {
+    background: url("../img/atlantis.jpg");
+    background-size: 100% 100%;
+}
+.atlantis-thumb {
+    background: url("../img/atlantis.jpg");
+    background-size: cover;
+}
+
+.est {
+	background: url("../img/iis.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.video-thumb {
-	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	background-position-x: 800px;
-	background-position-y: 600px;
+.est-thumb {
+	background: url("../img/iis.jpg") no-repeat;
+    background-size:cover;
 }
 
-.image-est {
-	background: url("http://sitelife.aviationweek.com/ver1.0/Content/images/store/13/2/1d5cd0bc-82ad-4fbf-924a-49ad83105360.Full.jpg") no-repeat;
+.tire {
+	background: url("../img/tire.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.image-est-thumb {
-	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	*/
-	background-position-x: 800px;
-	background-position-y: 600px;
+.tire-thumb {
+	background: url("../img/tire.jpg") no-repeat;
+    background-size:cover;
 }
 
-.image-tire {
-	background: url("http://www.blogcdn.com/www.autoblog.com/media/2009/01/lunar_rover_nasa---1.jpg") no-repeat;
+.sat {
+	background: url("../img/satelite.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.image-tire-thumb {
-	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	*/
-	background-position-x: 800px;
-	background-position-y: 600px;
+.sat-thumb {
+	background: url("../img/satelite.jpg") no-repeat;
+    background-size:cover;
 }
 
-.image-sat {
-	background: url("http://avanceyperspectiva.cinvestav.mx/wp-content/uploads/2013/02/satelite.jpg") no-repeat;
+.led {
+	background: url("../img/led.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.image-sat-thumb {
-	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	*/
-	background-position-x: 800px;
-	background-position-y: 600px;
+.led-thumb {
+	background: url("../img/led.jpg") no-repeat;
+    background-size:cover;
 }
 
-.image-led {
-	background: url("http://www.carlightblog.com/files/2011/11/LED-Fertigung21.jpg") no-repeat;
+.energia {
+	background: url("../img/energia.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.image-led-thumb {
-	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	*/
-	background-position-x: 800px;
-	background-position-y: 600px;
+.energia-thumb {
+	background: url("../img/energia.jpg") no-repeat;
+    background-size:cover;
 }
 
-.image-ener {
-	background: url("http://www.smartgridcostarica.com/wordpress/wp-content/uploads/2012/11/BSE’s-Solar-Energy-Development-Center..jpg") no-repeat;
+.water-thumb {
+	background: url("../img/water.jpg") no-repeat;
+    background-size:cover;
+}
+
+.water {
+	background: url("../img/water.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.stars {
+	background:url("../img/stars.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 
-.image-ener-thumb {
-	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
-	*/
-	background-position-x: 800px;
-	background-position-y: 600px;
-}
-
-.image-water {
-	background: url("http://www.clickrally.com/wp-content/uploads/2011/09/Concept_Mars_colony.jpg") no-repeat;
-}
-
-.image-reach-stars {
-	background:url("http://apod.nasa.gov/apod/image/1304/air_campxBeletsky.jpg") no-repeat;
-	background-size: 100% 100%;
+.stars-thumb {
+	background:url("../img/stars.jpg") no-repeat;
+    background-size:cover;
 }
