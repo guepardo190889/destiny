@@ -1,0 +1,307 @@
+.rb-grid {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+	.rb-grid li {
+		width: 24%;
+		height: 15em;
+		margin: 0.5%;
+		background: #8CC7DF;
+		color: #fff;
+		display: block;
+		float: left;
+		padding: 1.6em;
+		cursor: pointer;
+		position: relative;
+	}
+
+		.rb-grid li.rb-span-2 {
+			width: 49%;
+		}
+
+		.rb-grid li.rb-span-4 {
+			width: 99%;
+		}
+
+		.rb-grid li h3 {
+			font-size: 2.6em;
+			font-weight: 100;
+		}
+
+		.rb-grid li[class^="icon-"]:before,
+		.rb-grid li[class*=" icon-"]:before {
+			font-size: 10em;
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			line-height: 3;
+			opacity: 0.4;
+			text-align: right;
+			pointer-events: none;
+		}
+
+.rb-temp {
+	display: block;
+	font-size: 2em;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.rb-grid li:hover .rb-temp {
+	opacity: 1;
+}
+
+.rb-overlay {
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	z-index: -1;
+	pointer-events: none;
+	cursor: default;
+}
+
+.rb-close {
+	position: absolute;
+	top: 0.4em;
+	right: 0.4em;
+	width: 2em;
+	height: 2em;
+	text-indent: -9000px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+	.rb-close::before {
+		content: 'x';
+		font-weight: 100;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		font-size: 3em;
+		line-height: 0.6;
+		text-align: center;
+		text-indent: 0px;
+	}
+
+.rb-week {
+	width: 100%;
+	height: 100%;
+}
+
+	.rb-week > div {
+		width: 0%; /* esto hace que se vea toda la imagen */
+		height: 100%;
+		float: left;
+		position: relative;
+		padding: 0% 0;
+	}
+
+		.rb-week > div:first-child {
+			width: 30%;
+		}
+
+	.rb-week span {
+		padding: 5% 0;
+		font-size: 2em;
+		font-weight: 100;
+		display: block;
+		margin: auto 0;
+		height: 30%;
+		width: 100%;
+		line-height: 0.8;
+	}
+
+		.rb-week span.rb-city {
+			font-weight: 700;
+			padding: 1% 10%;
+			font-size: 1em;
+			line-height: 1.2;
+		}
+
+	.rb-week [class^="icon-"]:before {
+		font-size: 2.5em;
+		font-weight: normal;
+	}
+
+	.rb-week > div:first-child [class^="icon-"] {
+		opacity: 0.1;
+	}
+
+/* Colors */
+
+/* Grid */
+.rb-grid li:nth-child(1) {
+	background: url("http://img.gawkerassets.com/img/17y6iqcav2cscjpg/original.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(2) {
+	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(3) {
+	background: url("http://sitelife.aviationweek.com/ver1.0/Content/images/store/13/2/1d5cd0bc-82ad-4fbf-924a-49ad83105360.Full.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(4) {
+	background: url("http://www.blogcdn.com/www.autoblog.com/media/2009/01/lunar_rover_nasa---1.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(5) {
+	background: url("http://avanceyperspectiva.cinvestav.mx/wp-content/uploads/2013/02/satelite.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(6) {
+	background: url("http://www.carlightblog.com/files/2011/11/LED-Fertigung21.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(7) {
+	background: url("http://www.smartgridcostarica.com/wordpress/wp-content/uploads/2012/11/BSE’s-Solar-Energy-Development-Center..jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(8) {
+	background: url("http://www.clickrally.com/wp-content/uploads/2011/09/Concept_Mars_colony.jpg");
+	background-size: cover;
+}
+
+.rb-grid li:nth-child(9) {
+	background: url("http://apod.nasa.gov/apod/image/1304/air_campxBeletsky.jpg");
+	background-size:cover;
+}
+
+
+@media screen and (max-width: 63.125em) {
+
+	.rb-grid li,
+	.rb-grid li.rb-span-2,
+	.rb-grid li.rb-span-4 {
+		width: 100%;
+		height: 10em;
+		text-align: left;
+	}
+
+		.rb-grid li[class^="icon-"]:before,
+		.rb-grid li[class*=" icon-"]:before {
+			font-size: 6em;
+			left: auto;
+			right: 0;
+			line-height: 2.5;
+		}
+
+		.rb-grid li > div {
+			text-align: center;
+		}
+}
+
+.image-sal {
+	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.image-sal-thumb {
+	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	*/
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.video {
+	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.video-thumb {
+	background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.image-est {
+	background: url("http://sitelife.aviationweek.com/ver1.0/Content/images/store/13/2/1d5cd0bc-82ad-4fbf-924a-49ad83105360.Full.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.image-est-thumb {
+	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	*/
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.image-tire {
+	background: url("http://www.blogcdn.com/www.autoblog.com/media/2009/01/lunar_rover_nasa---1.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.image-tire-thumb {
+	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	*/
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.image-sat {
+	background: url("http://avanceyperspectiva.cinvestav.mx/wp-content/uploads/2013/02/satelite.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.image-sat-thumb {
+	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	*/
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.image-led {
+	background: url("http://www.carlightblog.com/files/2011/11/LED-Fertigung21.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.image-led-thumb {
+	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	*/
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.image-ener {
+	background: url("http://www.smartgridcostarica.com/wordpress/wp-content/uploads/2012/11/BSE’s-Solar-Energy-Development-Center..jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.image-ener-thumb {
+	/* background: url("http://3.bp.blogspot.com/_IjycmXREkRQ/S-3_cGb38YI/AAAAAAAACP8/MsmBCGbhJoU/s1600/Atlantis+STS-132+Mision+Litoft.jpg") no-repeat;
+	*/
+	background-position-x: 800px;
+	background-position-y: 600px;
+}
+
+.image-water {
+	background: url("http://www.clickrally.com/wp-content/uploads/2011/09/Concept_Mars_colony.jpg") no-repeat;
+}
+
+.image-reach-stars {
+    background:url("http://apod.nasa.gov/apod/image/1304/air_campxBeletsky.jpg") no-repeat;
+    background-size: 100% 100%;
+}
